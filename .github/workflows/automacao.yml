@@ -17,13 +17,13 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-                
-      - name: 📦Instalar dependências
-        run: pip install -r requirements.txt
         
       - name: Instalar dependências
         run: pip install pandas
         
+      - name: 📦Instalar dependências
+        run: pip install -r requirements.txt
+                
       - name: 🤖Executar robô
         run: python robo.py
         
